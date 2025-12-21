@@ -14,6 +14,6 @@ print('{} {}.Welcome!'.format(greeting,name))
 print(f'{greeting} {name}.Welcome!')
 
 print(greeting.find('l'))
-name = name.replace('BoB','Jack')
+name = name.replace('Bob','Jack')
 print(dir(name))
 print(help(str))
