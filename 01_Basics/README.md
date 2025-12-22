@@ -17,16 +17,25 @@
 ### 2. Numeric Operations (numbers_basics.py)
 * **Types:** Integer Vs Float
 * **Arithmetic:**  Implemented Floor division `//` , Modulus `%` , Exponent `**`
-* **Casting:** Converted String to Int for Calcutions optimization.
+* **Casting:** Converted String to Int for Calculations optimization.
 
 ### 3. Data Structures (Next Up)
 * Lists, Sets , Tuples, and Dictionaries.
-* **List:** lists are the sequential representation of data ,Mutable.
-      - Key Methods used in for lists.
+* **List:** lists are the sequential representation of data,Mutable.
+      * Key Methods used in for lists.
       * `append()` , `remove()`,`pop()`,`extend()`,`insert()`,`index()`.
       * `sort()` / `reverse()` / `sorted()` : Used for sorting list.
       * `enumerate()` : Used in loop returns 2 values (index,Value).
       * `join()` / `split` : To change from list to string and vice-versa.
+
+* **Tuple:** Immutable.
+    * We can't use built-in methods like `append()`,`remove()`,`pop()`,`insert()`,`extend()`
+    * We can use for loop , `count()` function method.
+
+* **Sets:** Unordered,No Duplicates.
+    * We can use methods like `add()`,`difference()`,`union()`,`intersection()`,etc
+    * Useful when we don't need duplicates in our values.
+
 
 ---
 **Maintained by:** Abdul Jabbar
