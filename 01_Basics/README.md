@@ -22,11 +22,11 @@
 ### 3. Data Structures (Next Up)
 * Lists, Sets , Tuples, and Dictionaries.
 * **List:** lists are the sequential representation of data,Mutable.
-      * Key Methods used in for lists.
-      * `append()` , `remove()`,`pop()`,`extend()`,`insert()`,`index()`.
-      * `sort()` / `reverse()` / `sorted()` : Used for sorting list.
-      * `enumerate()` : Used in loop returns 2 values (index,Value).
-      * `join()` / `split` : To change from list to string and vice-versa.
+    * Key Methods used in for lists.
+    * `append()` , `remove()`,`pop()`,`extend()`,`insert()`,`index()`.
+    * `sort()` / `reverse()` / `sorted()` : Used for sorting list.
+    * `enumerate()` : Used in loop returns 2 values (index,Value).
+    * `join()` / `split` : To change from list to string and vice-versa.
 
 * **Tuple:** Immutable.
     * We can't use built-in methods like `append()`,`remove()`,`pop()`,`insert()`,`extend()`
