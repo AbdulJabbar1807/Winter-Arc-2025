@@ -14,13 +14,19 @@
     * `upper()` / `lower()`: Standardizing text input.
     * `find()` / `count()`: Basic text analysis.
 
-### 2. Numeric Operations (numbers_baics.py)
+### 2. Numeric Operations (numbers_basics.py)
 * **Types:** Integer Vs Float
 * **Arithmetic:**  Implemented Floor division `//` , Modulus `%` , Exponent `**`
-* **Casting:** Converted String to Int for calcution optimization.
+* **Casting:** Converted String to Int for Calcutions optimization.
 
 ### 3. Data Structures (Next Up)
 * Lists, Sets , Tuples, and Dictionaries.
+* **List:** lists are the sequential representation of data ,Mutable.
+      - Key Methods used in for lists.
+      * `append()` , `remove()`,`pop()`,`extend()`,`insert()`,`index()`.
+      * `sort()` / `reverse()` / `sorted()` : Used for sorting list.
+      * `enumerate()` : Used in loop returns 2 values (index,Value).
+      * `join()` / `split` : To change from list to string and vice-versa.
 
 ---
 **Maintained by:** Abdul Jabbar
