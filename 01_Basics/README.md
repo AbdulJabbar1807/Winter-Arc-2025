@@ -14,8 +14,13 @@
     * `upper()` / `lower()`: Standardizing text input.
     * `find()` / `count()`: Basic text analysis.
 
-### 2. Data Structures (Next Up)
-* Lists, Tuples, and Dictionaries.
+### 2. Numeric Operations (numbers_baics.py)
+* **Types:** Integer Vs Float
+* **Arithmetic:**  Implemented Floor division `//` , Modulus `%` , Exponent `**`
+* **Casting:** Converted String to Int for calcution optimization.
+
+### 3. Data Structures (Next Up)
+* Lists, Sets , Tuples, and Dictionaries.
 
 ---
 **Maintained by:** Abdul Jabbar
