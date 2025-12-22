@@ -19,7 +19,7 @@
 * **Arithmetic:**  Implemented Floor division `//` , Modulus `%` , Exponent `**`
 * **Casting:** Converted String to Int for Calculations optimization.
 
-### 3. Data Structures (Next Up)
+### 3. Data Structures 
 * Lists, Sets , Tuples, and Dictionaries.
 * **List:** lists are the sequential representation of data,Mutable.
     * Key Methods used in for lists.
@@ -35,6 +35,12 @@
 * **Sets:** Unordered,No Duplicates.
     * We can use methods like `add()`,`difference()`,`union()`,`intersection()`,etc
     * Useful when we don't need duplicates in our values.
+
+* **Dictionaries:** Key:Value pair,Key:Unique identifier,Value:is the data.
+    * different built-in methods `get()`,`update()`,`pop()`,`keys()`,`values()`,`items()`,etc.
+    * we can use for loop to iterate through all the Key:Value pair in dicts.
+
+### 4.Conditionals and Booleans-if-else statement(Next Up)
 
 
 ---
