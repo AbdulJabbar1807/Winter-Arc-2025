@@ -41,7 +41,9 @@
     * we can use for loop to iterate through all the Key:Value pair in dicts.
 
 ### 4.Conditionals and Booleans-if-else statement(Next Up)
-
+*   Basic use case of if-else statement.
+*   Logical Operators: and, or, not.
+*   Boolean : False / True.
 
 ---
 **Maintained by:** Abdul Jabbar
