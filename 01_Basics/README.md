@@ -45,5 +45,8 @@
 *   Logical Operators: and, or, not.
 *   Boolean : False / True.
 
+### 5.Loops - for loop,while loop.
+*   Basic use case of for loop in python for iteration.
+
 ---
 **Maintained by:** Abdul Jabbar
