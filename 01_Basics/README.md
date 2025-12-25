@@ -47,6 +47,6 @@
 
 ### 5.Loops - for loop,while loop.
 *   Basic use case of for loop in python for iteration.
-
+*   Basic use case of while loop in python using star pattern.
 ---
 **Maintained by:** Abdul Jabbar
