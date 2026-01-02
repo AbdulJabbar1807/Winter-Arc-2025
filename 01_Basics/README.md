@@ -40,7 +40,7 @@
     * different built-in methods `get()`,`update()`,`pop()`,`keys()`,`values()`,`items()`,etc.
     * we can use for loop to iterate through all the Key:Value pair in dicts.
 
-### 4.Conditionals and Booleans-if-else statement(Next Up)
+### 4.Conditionals and Booleans-if-else statement
 *   Basic use case of if-else statement.
 *   Logical Operators: and, or, not.
 *   Boolean : False / True.
