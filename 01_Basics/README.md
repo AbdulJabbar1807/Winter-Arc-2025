@@ -1,6 +1,6 @@
-# Module 01: Python Core Foundations
+# Python Core Foundations
 
-**Status:**  In Progress
+**Status:**  Completed
 **Focus:** Understanding memory, Mutable vs Immutable types, and Data Structures.
 
 ##  What I Learned
