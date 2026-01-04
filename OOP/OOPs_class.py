@@ -23,6 +23,8 @@ print(emp_1.first)
 print(emp_1.fullname())        
 print(emp_1.pay)
 print(emp_2.pay)
+print(Employee.raise_amount)
+print(emp_1.raise_pay())
 print(Employee.numOfEmps)
 
 class Car:
