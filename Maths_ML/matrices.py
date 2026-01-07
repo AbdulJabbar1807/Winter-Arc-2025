@@ -1,21 +1,6 @@
 import numpy as np
 
-#we will write a function to test if a 4x4 matrix is singular,
-# i.e. to determine if an inverse exists , before calculating it.
-# Matrices in python-
-# In the numpy package in python,matrices are indexed using zero for
-# the top-most column and left-most row i.e. the matrix structure 
-# looks like this-
-# A[0,0]  A[0,1]  A[0,2]  A[0,3] 
-# A[1,0]  A[1,1]  A[1,2]  A[1,3]
-# A[2,0]  A[2,1]  A[2,2]  A[2,3]
-# A[3,0]  A[3,1]  A[3,2]  A[3,3]
-# We can also access the value of each element individually using,
-# A[n, m]
-# which will give the n'th row and the m'th column(starting with zero).
-# We can also access a whole row at a time using.
-# A[n]
-# Which we'll see will be useful when calculating linear combination of rows.#
+#we will write a function to test a given matrice
 
 def isSingular(A) :
     B = np.array(A, dtype=np.float_) # pyright: ignore[reportAttributeAccessIssue] # Make B as a copy of A, since we're going to alter it's values.
@@ -28,14 +13,8 @@ def isSingular(A) :
         return True
     return False
 
-# This next line defines our error flag. For when things go wrong if the matrix is singular.
 class MatrixIsSingular(Exception): pass
 
-# For Row Zero, all we require is the first element is equal to 1.
-# We'll divide the row by the value of A[0, 0].
-# This will get us in trouble though if A[0, 0] equals 0, so first we'll test for that,
-# and if this is true, we'll add one of the lower rows to the first one before the division.
-# We'll repeat the test going down each lower row until we can do the division.
 def fixRowZero(A) :
     if A[0,0] == 0 :
         A[0] = A[0] + A[1]
@@ -48,11 +27,7 @@ def fixRowZero(A) :
     A[0] = A[0] / A[0,0]
     return A
 
-# First we'll set the sub-diagonal elements to zero, i.e. A[1,0].
-# Next we want the diagonal element to be equal to one.
-# We'll divide the row by the value of A[1, 1].
-# Again, we need to test if this is zero.
-# If so, we'll add a lower row and repeat setting the sub-diagonal elements to zero.
+
 def fixRowOne(A) :
     A[1] = A[1] - A[1,0] * A[0]
     if A[1,1] == 0 :
