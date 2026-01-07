@@ -2,6 +2,9 @@
 # Class methods : Class methods uses the @classmethod decorator, which makes the method receive 
 # the class itself as the first argument (usually named cls for convention),instead of an instance (self).
 # Static methods : 
+import datetime
+my_datetime = datetime.date(2026 , 1 , 23)
+
 
 class Car:
     NumofCars = 0
@@ -22,6 +25,7 @@ class Car:
     def RaiseCar_Price(cls ,prices) :
         cls.raise_prices = prices # Class method name should be same as regular methods variable.
 
+
          
 Car.NumofCars       
 car_1 = Car('Petrol','Audi','Q7',9200000)
@@ -41,4 +45,4 @@ print(car_1.price)
  
 print(f"Vehicle Type = {car_1.vehicle_type},Brand = {car_1.brand},Model Name = {car_1.name},New Price = Rs.{car_1.price}")
 
-# Static methods
+

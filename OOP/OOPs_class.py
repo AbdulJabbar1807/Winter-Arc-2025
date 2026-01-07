@@ -1,3 +1,7 @@
+import datetime
+my_datetime = datetime.date(2026 , 1 , 23)
+
+
 class Employee:
     numOfEmps = 0
     raise_amount = 1.09
@@ -11,7 +15,16 @@ class Employee:
     def fullname(self):
         return(f"{self.first} {self.last}")
     def raise_pay(self):
-        self.pay = int(self.pay * self.raise_amount)
+         self.pay = int(self.pay * self.raise_amount)
+         
+    # Static methods
+    @staticmethod
+    def is_workday(day):
+        if day.weekday == 5 or  day.weekday == 6 :
+            return False
+        return True
+
+print(Employee.is_workday(my_datetime))
 
 emp_1 = Employee('Abdul','Jabbar',500000)
 emp_2 = Employee('Amaan','Khan',600000)
@@ -24,11 +37,11 @@ print(emp_1.fullname())
 print(emp_1.pay)
 print(emp_2.pay)
 print(Employee.raise_amount)
-print(emp_1.raise_pay())
 print(Employee.numOfEmps)
 
 class Car:
     NumofCars = 0
+    
     def __init__(self,vehicle_type,brand,model_name,price)-> None :
         self.vehicle_type = vehicle_type
         self.brand = brand
