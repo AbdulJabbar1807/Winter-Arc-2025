@@ -70,10 +70,20 @@ class Cricketer:
         self.player_name = player_name
         self.player_type = player_type
         self.player_team = player_team
-        
+        Cricketer.numofPlayers += 1
 player_1 = Cricketer('Virat Kohli','Right hand batsmen','India',28000)
+player_2 = Cricketer('Joe Root','Right hand batsmen','England',21000)
+
+Cricketer.numofPlayers
+print(Cricketer.numofPlayers)
+        
+
 print(player_1.player_name)
 print(player_1.player_type)
 print(player_1.player_team)
+
+print(player_2.player_name)
+print(player_2.player_type)
+print(player_2.player_team)
 
         
