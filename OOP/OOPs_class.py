@@ -65,25 +65,33 @@ print(f"Vehicle Type = {car_4.vehicle_type},Brand = {car_4.brand},Model Name = {
 
 class Cricketer:
     numofPlayers = 0
-    
+    base_salary = 7 # salary in crore
     def __init__(self,player_name,player_type,player_team,player_runs) -> None:
         self.player_name = player_name
         self.player_type = player_type
         self.player_team = player_team
         Cricketer.numofPlayers += 1
-player_1 = Cricketer('Virat Kohli','Right hand batsmen','India',28000)
-player_2 = Cricketer('Joe Root','Right hand batsmen','England',21000)
+        
+    @classmethod
+    def set_base_salary(cls,new_fee):
+        cls.base_salary = new_fee
+        
+player_1 = Cricketer('Virat Kohli','Right hand batsmen','India',28000)# base salary in crore's
+player_2 = Cricketer('Rohit Sharma','Right hand batsmen','India',21000)# base salary in crore's
 
 Cricketer.numofPlayers
-print(Cricketer.numofPlayers)
-        
+print(Cricketer.numofPlayers)       
 
 print(player_1.player_name)
 print(player_1.player_type)
 print(player_1.player_team)
+print(f"{player_1.base_salary} Crore")
+Cricketer.set_base_salary(10)
+print(f"{player_1.base_salary} Crore")
+
 
 print(player_2.player_name)
 print(player_2.player_type)
 print(player_2.player_team)
-
+print(f"{player_2.base_salary} Crore")
         
