@@ -23,6 +23,7 @@ class Employee:
         if day.weekday == 5 or  day.weekday == 6 :
             return False
         return True
+    
 
 print(Employee.is_workday(my_datetime))
 
@@ -62,3 +63,17 @@ print(f"Vehicle Type = {car_4.vehicle_type},Brand = {car_4.brand},Model Name = {
         
         
 
+class Cricketer:
+    numofPlayers = 0
+    
+    def __init__(self,player_name,player_type,player_team,player_runs) -> None:
+        self.player_name = player_name
+        self.player_type = player_type
+        self.player_team = player_team
+        
+player_1 = Cricketer('Virat Kohli','Right hand batsmen','India',28000)
+print(player_1.player_name)
+print(player_1.player_type)
+print(player_1.player_team)
+
+        
