@@ -78,20 +78,24 @@ class Cricketer:
         
 player_1 = Cricketer('Virat Kohli','Right hand batsmen','India',28000)# base salary in crore's
 player_2 = Cricketer('Rohit Sharma','Right hand batsmen','India',21000)# base salary in crore's
-
+player_3 = Cricketer('Joe Root','Right hand batsmen','England',21000)# base salary in crore's
 Cricketer.numofPlayers
 print(Cricketer.numofPlayers)       
 
 print(player_1.player_name)
 print(player_1.player_type)
 print(player_1.player_team)
-print(f"{player_1.base_salary} Crore")
+print(f"Base Salary : {player_1.base_salary} Crore")
 Cricketer.set_base_salary(10)
-print(f"{player_1.base_salary} Crore")
+print(f"New Base Salary : {player_1.base_salary} Crore")
 
 
 print(player_2.player_name)
 print(player_2.player_type)
 print(player_2.player_team)
-print(f"{player_2.base_salary} Crore")
+print(f"Base salary : {player_2.base_salary} Crore")
         
+print(player_3.player_name)
+print(player_3.player_type)
+print(player_3.player_team)
+print(f"Base Salary : {player_3.base_salary} Crore")
