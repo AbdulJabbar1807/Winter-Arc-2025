@@ -6,9 +6,5 @@ class Car:
 
 car_1 = Car('Tata','Harrier',2500000)
 car_2 = Car('Hyundai','Creta',200000)
-print(car_1.brand)
-print(car_1.model)
-print(f'Rs.{car_1.price}')
-print(car_2.brand)
-print(car_2.model)
-print(f'Rs.{car_2.price}')
+print(f'{car_1.brand} {car_1.model} {car_1.price}')
+print(f'{car_2.brand} {car_2.model} {car_2.price}')
