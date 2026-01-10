@@ -40,6 +40,10 @@ print(emp_2.pay)
 print(Employee.raise_amount)
 print(Employee.numOfEmps)
 
+
+#--------------------------------------------------------------------------------------------------------------#
+
+
 class Car:
     NumofCars = 0
     
@@ -60,7 +64,7 @@ print(Car.NumofCars)
 print(f"Vehicle Type = {car_2.vehicle_type},Brand = {car_2.brand},Model Name = {car_2.name},Price = Rs.{car_2.price}")
 print(f"Vehicle Type = {car_4.vehicle_type},Brand = {car_4.brand},Model Name = {car_4.name},Price = Rs.{car_4.price}")
 
-        
+#------------------------------------------------------------------------------------------------------#
         
 
 class Cricketer:
@@ -82,20 +86,15 @@ player_3 = Cricketer('Joe Root','Right hand batsmen','England',21000)# base sala
 Cricketer.numofPlayers
 print(Cricketer.numofPlayers)       
 
-print(player_1.player_name)
-print(player_1.player_type)
-print(player_1.player_team)
-print(f"Base Salary : {player_1.base_salary} Crore")
+print(f'{player_1.player_name} {player_1.player_type} {player_1.player_team} Base Salary : {player_1.base_salary} Crore')
+
 Cricketer.set_base_salary(10)
 print(f"New Base Salary : {player_1.base_salary} Crore")
 
+print(f'{player_2.player_name} {player_2.player_type} {player_2.player_team} Base Salary : {player_2.base_salary} Crore')
 
-print(player_2.player_name)
-print(player_2.player_type)
-print(player_2.player_team)
-print(f"Base salary : {player_2.base_salary} Crore")
-        
-print(player_3.player_name)
-print(player_3.player_type)
-print(player_3.player_team)
-print(f"Base Salary : {player_3.base_salary} Crore")
+print(f'{player_3.player_name} {player_3.player_type} {player_3.player_team} Base Salary : {player_3.base_salary} Crore')
+
+
+
+#--------------------------------------------------------------------------------------------------------------#
