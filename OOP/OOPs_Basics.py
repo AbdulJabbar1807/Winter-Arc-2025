@@ -2,6 +2,7 @@ class Car:
     tax_rate = 0.24 # Class variable (also,24 % of total price).
     
     def __init__(self, brand, model, price):
+        Car.is_price_valid(price)
         self.brand = brand
         self.model = model
         self.price = price
@@ -28,7 +29,6 @@ class Car:
             raise ValueError("Price should be in number.")
         if price <= 0 :
             raise ValueError("Price should be greater than zero.")
-        return price
     
         
 car_1 = Car('Tata','Harrier',Car.is_price_valid(2500000))
