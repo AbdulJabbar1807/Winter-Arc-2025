@@ -60,3 +60,33 @@ print(f'New tax rate for car 1 is Rs.{car_1.price_with_tax()}')
 
 
 #------------------------------------------------------------------------------------------------------------------#
+
+class Bank_Account :
+    amount = 1233
+    wd_amount = 234
+    def __init__(self,account_holder,balance,deposit_amount):
+        Bank_Account.is_balance(balance)
+        self.account_holder = account_holder
+        self.balance = balance
+        self.deposit_amount = deposit_amount
+        
+    @staticmethod
+    def is_balance(balance):
+        if not isinstance(balance,(int,float)):
+            raise ValueError("Balance should be in number.")
+    def deposit_amount(self,deposit_amount):
+        deposit_amount = Bank_Account.amount + self.balance 
+        return deposit_amount
+    
+    def withdraw_amount(wd_amount):
+    
+    @classmethod
+    def deposit(cls,amount):
+        if not isinstance(amount,(int,float)):
+            raise ValueError("Amount should be a number.")
+        if amount <= 0:
+            raise ValueError("Amount should be more than zero.")
+        
+    
+User_1 = Bank_Account('Abdul Jabbar',3400304,1000)
+        
