@@ -44,6 +44,10 @@ print(f'Price with increased tax is Rs.{car_2.price_with_tax()} for car 2.')
 Car.new_tax_rate(0.39) # Use of class method
 print(f'New tax rate for car 1 is Rs.{car_1.price_with_tax()}')
 
+Car.tax_rate = -1
+print(car_1.price_with_tax())
+Car.new_tax_rate(-1)
+print(car_1.price_with_tax())
 
 
 #------------------------------------------------------------------------------------------------------------------#
