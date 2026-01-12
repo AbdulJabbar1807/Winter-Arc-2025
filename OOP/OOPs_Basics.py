@@ -22,8 +22,17 @@ class Car:
         
         cls.tax_rate = new_rate
         
-car_1 = Car('Tata','Harrier',2500000)
-car_2 = Car('Hyundai','Creta',200000)
+    @staticmethod
+    def is_price_valid (price):
+        if not isinstance(price,(int,float)):
+            raise ValueError("Price should be in number.")
+        if price <= 0 :
+            raise ValueError("Price should be greater than zero.")
+        return price
+    
+        
+car_1 = Car('Tata','Harrier',Car.is_price_valid(2500000))
+car_2 = Car('Hyundai','Creta',Car.is_price_valid(2000000))
 
 print(f'{car_1.brand} {car_1.model} Rs{car_1.price}')
 print(f'{car_2.brand} {car_2.model} Rs{car_2.price}')
@@ -44,10 +53,10 @@ print(f'Price with increased tax is Rs.{car_2.price_with_tax()} for car 2.')
 Car.new_tax_rate(0.39) # Use of class method
 print(f'New tax rate for car 1 is Rs.{car_1.price_with_tax()}')
 
-Car.tax_rate = -1
-print(car_1.price_with_tax())
-Car.new_tax_rate(-1)
-print(car_1.price_with_tax())
+# Car.tax_rate = -1 # will give 0.0 .
+# print(car_1.price_with_tax())
+# Car.new_tax_rate(-1) # will give an error.
+# print(car_1.price_with_tax())
 
 
 #------------------------------------------------------------------------------------------------------------------#
