@@ -61,10 +61,10 @@
 
 #------------------------------------------------------------------------------------------------------------------#
 
-class Bank_Account :
+class BankAccount :
     
     def __init__(self,account_holder,balance):
-        Bank_Account.is_balance(balance)
+        BankAccount.is_balance(balance)
         self.account_holder = account_holder
         self.balance = balance
         
@@ -88,7 +88,7 @@ class Bank_Account :
         return self.balance
         
     
-User_1 = Bank_Account('Abdul Jabbar',340)
+User_1 = BankAccount('Abdul Jabbar',340)
 print(User_1.withdraw_amount(45))
 print(User_1.deposit_amount(456))
 print(User_1.check_balance())
