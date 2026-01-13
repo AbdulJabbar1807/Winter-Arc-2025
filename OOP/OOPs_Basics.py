@@ -74,7 +74,7 @@ class BankAccount :
     def __init__(self,account_holder,balance):
         BankAccount.is_balance(balance)
         self.account_holder = account_holder
-        self.balance = balance
+        self.__balance = balance
         
     @staticmethod # Static Method
     def is_balance(balance):
@@ -82,19 +82,26 @@ class BankAccount :
             raise ValueError("Balance should be in number's.")
     
     def deposit_amount(self,amount): # Instance Method : 1.Deposit amount
-        self.balance = self.balance + amount
-        return self.balance
+        self.__balance = self.__balance + amount
+        return self.__balance
     
     def withdraw_amount(self,wd_amount): # Instance Method : 2.Withdraw amount
-        if wd_amount > self.balance:
+        if wd_amount > self.__balance:
             raise ValueError("Insufficient balance.")
         else:
-            self.balance = self.balance - wd_amount
-        return self.balance
+            self.__balance = self.__balance - wd_amount
+        return self.__balance
     
     def check_balance(self): # Instance Methos : 3 .Check Balandce
-        return self.balance
-        
+        return self.__balance
+    
+    @property
+    def balance(self):
+        return self.__balance
+    @balance.setter
+    def balance(self,value):
+        BankAccount.is_balance(value)
+        self.__balance = value
     
 User_1 = BankAccount('Abdul Jabbar',340)
 print(User_1.withdraw_amount(45))
