@@ -39,4 +39,4 @@ class Car:
         self._price = value
     
         
-car_1 = Car('Tata','Harrier',Car.is_price_valid(2500000))
+car_1 = Car('Tata','Harrier',2500000)

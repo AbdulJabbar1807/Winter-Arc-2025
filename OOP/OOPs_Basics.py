@@ -30,7 +30,7 @@ class Car:
         if price <= 0 :
             raise ValueError("Price should be greater than zero.")
         
-    @property
+    @property # Encapsulation
     def price(self):
         return self._price
     @price.setter
@@ -39,8 +39,8 @@ class Car:
         self._price = value
     
         
-car_1 = Car('Tata','Harrier',Car.is_price_valid(2500000))
-car_2 = Car('Hyundai','Creta',Car.is_price_valid(2000000))
+car_1 = Car('Tata','Harrier',2500000)
+car_2 = Car('Hyundai','Creta',2000000)
 
 print(f'{car_1.brand} {car_1.model} Rs{car_1.price}')
 print(f'{car_2.brand} {car_2.model} Rs{car_2.price}')
