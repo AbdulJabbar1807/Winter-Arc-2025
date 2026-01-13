@@ -79,7 +79,7 @@ class BankAccount :
     
     def withdraw_amount(self,wd_amount):
         if wd_amount > self.balance:
-            return ("Insufficient balance.")
+            raise ValueError("Insufficient balance.")
         else:
             self.balance = self.balance - wd_amount
         return self.balance
