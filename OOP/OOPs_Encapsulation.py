@@ -3,8 +3,8 @@ class Car:
     
     def __init__(self, brand, model, price):
         Car.is_price_valid(price)
-        self.brand = brand
-        self.model = model
+        self._brand = brand # read only for immutability.
+        self._model = model # read only for immutability.
         self._price = price # Protected attributes.
     
     def increase_price(self,percent): # Instance variable.
@@ -37,6 +37,13 @@ class Car:
     def price(self,value):
         Car.is_price_valid(value)
         self._price = value
-    
+    @property
+    def brand(self):
+        return self._brand
+
+    @property
+    def model(self):
+        return self._model
+
         
 car_1 = Car('Tata','Harrier',2500000)
