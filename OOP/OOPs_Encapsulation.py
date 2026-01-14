@@ -49,4 +49,3 @@ class Car:
 car_1 = Car('Tata','Harrier',2500000)
 print(car_1.brand)
 print(car_1.model)
-car_1.brand = 'bmw'
