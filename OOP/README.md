@@ -11,3 +11,4 @@
 **Class Methods:** This class methods can override the regular methods in the main class without disturbing the whole code.
 **Static Method:** This static methods are method that logically belong to a class but does'nt need access to either the instance(self) or the class(cls).
 **Encapsulation:** The internal state of an object should not be freely modifiable.All changes must go through controlled paths.
+**Inheritance:** Inheritance allows one class to reuse and extend another class’s behavior.
