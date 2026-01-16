@@ -52,3 +52,8 @@ class ElectricCar(Car):
 
 car_1 = ElectricCar('Tata','Harrier',3000000,700)
 print(f' Battery range of Tata Harrier Ev is {car_1.battery_range} KM per full charge.')
+e1 = ElectricCar("Tesla", "Model Y", 6000000, 500)
+
+print(e1.brand)          # inherited
+print(e1.price)          # inherited & encapsulated
+print(e1.battery_range)  # child-specific
