@@ -49,7 +49,7 @@ class ElectricCar(Car):
     def __init__(self, brand, model, price, battery_range):
         super().__init__(brand, model, price)
         self.battery_range = battery_range # range in KM
-    def price_with_tax(self):
+    def price_with_tax(self): # Method Override
         base_price = super().price_with_tax()
         subsidy = 50000
         return base_price - subsidy
