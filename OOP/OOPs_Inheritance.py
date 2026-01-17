@@ -49,6 +49,10 @@ class ElectricCar(Car):
     def __init__(self, brand, model, price, battery_range):
         super().__init__(brand, model, price)
         self.battery_range = battery_range # range in KM
+    def price_with_tax(self):
+        base_price = super().price_with_tax()
+        subsidy = 50000
+        return base_price - subsidy
 
 car_1 = ElectricCar('Tata','Harrier',3000000,700)
 print(f' Battery range of Tata Harrier Ev is {car_1.battery_range} KM per full charge.')
