@@ -62,3 +62,10 @@ print(e1.brand)          # inherited
 print(e1.price)          # inherited & encapsulated
 print(e1.battery_range)  # child-specific
 print(e1.model)
+
+e2 = ElectricCar("AUDI", "Model Q", 60000000, 500)
+
+print(e2.brand)          # inherited
+print(e2.price)          # inherited & encapsulated
+print(e2.battery_range)  # child-specific
+print(e2.model)
