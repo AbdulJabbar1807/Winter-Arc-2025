@@ -18,7 +18,7 @@ class Car:
     
     # Intance method
     def raise_price(self):
-        self.price = int(self.price * self.raise_prices)
+        self.price = int(self.price * self.raise_prices) 
 
 # Class method
     @classmethod
